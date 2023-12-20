@@ -20,6 +20,7 @@ ul {
 
 li {
     display: inline-block;
+    padding:20px;
     
 }
 
@@ -29,3 +30,19 @@ a {
 
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #55dc61;
+}
+
+#game-container {
+    width: 400px;
+    height: 400px; 
+    border: 2px solid #841e1e; 
+    padding: 20px; 
+    background-color: #fff; 
+}

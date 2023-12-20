@@ -57,6 +57,3 @@ function showDecade(decade) {
 
     decadeQuestions.style.display = 'block'
 }
-
-
-
