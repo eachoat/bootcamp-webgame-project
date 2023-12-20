@@ -11,33 +11,33 @@
 
 
 
-<body>
-      <div id="game-container">
+      <body>
+            <div id="game-container">
 
-            <section id="home-screen">
-                  <h1>Welcome to Music Trivia!</h1>
-                  <p>Choose a Decade to Begin</p>
-                  <ul>
-                  <li><a href="#70s">70's Songs</a></li>
-                  <li><a href="#80s">80's Songs</a></li>
-                  <li><a href="#90s">90's Songs</a></li>
-                  </ul>
-            </section>
+                  <section id="home-screen">
+                        <h1>Welcome to Music Trivia!</h1>
+                        <p>Choose a Decade to Begin</p>
+                        <ul>
+                        <li><a href="#70s">70's Songs</a></li>
+                        <li><a href="#80s">80's Songs</a></li>
+                        <li><a href="#90s">90's Songs</a></li>
+                        </ul>
+                  </section>
 
 
-            <section id="decade-questions" style="display: none">
+                  <section id="decade-questions" style="display: none">
                   
                   <h2 id="current-decade">70's Songs</h2>
 
                   <section class="game-q-a" id="70s-question-set-1"> 
                         <p>Which Band wrote the song 'How Deep is Your Love'? </p>  <!-- Bee Gees -->
                         <form>
-                              <input type="radio" name="Answer" value="The Beatles">The Beatles<br>
-                              <input type="radio" name="Answer" value="Fleetwood Mac">Fleetwood Mac<br>
-                              <input type="radio" name="Answer" value="Bee Gees">Bee Gees<br>
-                              <input type="radio" name="Answer" value="Led Zeppelin">Led Zeppelin<br>
+                              <button onclick="checkAnswer(false)">The Beatles</button>
+                              <button onclick="checkAnswer(false)">Fleetwood Mac</button>
+                              <button onclick="checkAnswer(true)">Bee Gees</button>
+                              <button onclick="checkAnswer(false)">Led Zeppelin</button>
                         </form>
-                        <button onclick="checkAndNext()">Next</button>
+                        
                   </section>
 
 
