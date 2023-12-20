@@ -6,3 +6,26 @@
 .game-score {
     
 }
+
+#home-screen {
+    text-align: center;
+    padding:10px;
+
+}
+
+ul {
+    list-style-type: none;
+    
+}
+
+li {
+    display: inline-block;
+    
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
