@@ -25,16 +25,79 @@
                 Question: "Which Band wrote the song 'Mr. Blue Sky'?",
                 Answers: [
                     {
-                        Answer: "The Beatles",
+                        Answer: "The Temptations",
                         Correct: false,
                     },
                     {
-                        Answer: "Fleetwood Mac",
-                        Correct: false,
+                        Answer: "Electric Light Orchestra",
+                        Correct: true,
                     },
                     {
                         Answer: "Bee Gees",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Aerosmith",
+                        Correct: false,
+                    },
+                ],
+            },
+            {
+                Question: "Which Band wrote the song 'Superstition'?",
+                Answers: [
+                    {
+                        Answer: "Parliament",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Electric Light Orchestra",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "The Temptations",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Stevie Wonder",
                         Correct: true,
+                    },
+                ],
+            },
+            {
+                Question: "Which Band wrote the song 'Just My Imagination'?",
+                Answers: [
+                    {
+                        Answer: "Sly And The Family Stone",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "The Temptations",
+                        Correct: true,
+                    },
+                    {
+                        Answer: "Pink Floyd",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Parliament",
+                        Correct: false,
+                    },
+                ],
+            },
+            {
+                Question: "Which Band wrote the song 'Get Back'?",
+                Answers: [
+                    {
+                        Answer: "Beatles",
+                        Correct: true,
+                    },
+                    {
+                        Answer: "AC/DC",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Pink Floyd",
+                        Correct: false,
                     },
                     {
                         Answer: "Led Zeppelin",
@@ -42,6 +105,112 @@
                     },
                 ],
             },
+            {
+                Question: "Which Band wrote the song 'When the Levee Breaks'?",
+                Answers: [
+                    {
+                        Answer: "Beatles",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "AC/DC",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Rolling Stones",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Led Zeppelin",
+                        Correct: true,
+                    },
+                ],
+            },
+            {
+                Question: "Which Band wrote the song 'Dream On'?",
+                Answers: [
+                    {
+                        Answer: "Beatles",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Aerosmith",
+                        Correct: true,
+                    },
+                    {
+                        Answer: "Rolling Stones",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Pink Floyd",
+                        Correct: false,
+                    },
+                ],
+            },
+            {
+                Question: "Which Band wrote the song 'Sara Smile'?",
+                Answers: [
+                    {
+                        Answer: "Beatles",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "AC/DC",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Pink Floyd",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Hall and Oates",
+                        Correct: true,
+                    },
+                ],
+            },
+            {
+                Question: "Which Band wrote the song 'Somebody to Love'?",
+                Answers: [
+                    {
+                        Answer: "Sly and the Family Stone",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "AC/DC",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Queen",
+                        Correct: true,
+                    },
+                    {
+                        Answer: "Hall and Oates",
+                        Correct: false,
+                    },
+                ],
+            },
+            {
+                Question: "Which Band wrote the song 'Comfortably Numb'?",
+                Answers: [
+                    {
+                        Answer: "Pink Floyd",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "AC/DC",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Queen",
+                        Correct: true,
+                    },
+                    {
+                        Answer: "Eagles",
+                        Correct: false,
+                    },
+                ],
+            },
+        
         
             
 
@@ -70,10 +239,15 @@
         function checkAnswer(isCorrect) {
             if (isCorrect) {
                 alert("Correct!");
+
+                currentQuestionIndex++;
+                if (currentQuestionIndex < questions_70s.length) {
+                    displayQuestion(currentQuestionIndex);
+                }
                 
 
                 //questions_70s[0] question should be questions_70s[i+1]
-                displayQuestion[i+1]
+               
             } else {
 
                 alert("Incorrect. Try Again");
@@ -84,31 +258,35 @@
         console.log(questions_70s[0].Answers)
         console.log(questions_70s[0].Answers[0].Answer)
 
-        function checkAndNext(isCorrect) {
-            
 
-            if (isCorrect) {
 
-            currentQuestionIndex++;
 
-            if (currentQuestionIndex < questions_70s.length) {
-                displayQuestion(currentQuestionIndex);
-            } else {
-                alert("Quiz completed!");
-            }
-        }
 
         //have an array of objects for q and a's just from line 2 to 50. 
-        //  for displayQUestion function the get question set id from the array (line 103)
+        //  for displayQUestion function get question set id from the array (line 103)
         // call display question function if correct!!!
         
 
         function displayQuestion(i) {
-            const decadeQuestions = document.getElementById("#decade-questions");
-            const questionSetId = questions_70s[i+1]
-            console.log(questionSetId)
-            decadeQuestions.innerHTML = document.getElementById(questionSetId).innerHTML;
+            const questionData = questions_70s[i];
+        
+            const questionTextElement = document.getElementById("question-text");
+            questionTextElement.textContent = questionData.Question;
+                console.log(questionTextElement)
+        
+            const answersContainer = document.getElementById("answers-container");
+            answersContainer.innerHTML = '';
+                console.log(answersContainer)
+        
+            questionData.Answers.forEach(answer => {
+                const answerButton = document.createElement('button');
+                answerButton.textContent = answer.Answer;
+                answerButton.addEventListener('click', () => checkAnswer(answer.Correct));
+                answersContainer.appendChild(answerButton);
+            });
         }
+
+        
 
 
         document.addEventListener('DOMContentLoaded', function () {
