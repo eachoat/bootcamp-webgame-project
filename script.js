@@ -1,4 +1,6 @@
-       let currentQuestionIndex = 0;
+      //  questions_70s Questions/Answers
+
+      let currentQuestionIndex = 0;
         const questions_70s = [
             {
                 Question: "Which Band wrote the song 'How Deep is Your Love'?",
@@ -194,6 +196,420 @@
                 Answers: [
                     {
                         Answer: "Pink Floyd",
+                        Correct: true,
+                    },
+                    {
+                        Answer: "AC/DC",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Queen",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Eagles",
+                        Correct: false,
+                    },
+                ],
+            },      
+        ];
+
+
+
+
+        //  questions_80s Questions/Answers
+        
+        const questions_80s = [
+            {
+                Question: "Which Band wrote the song 'Africa'?",
+                Answers: [
+                    {
+                        Answer: "A-Ha",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Toto",
+                        Correct: true,
+                    },
+                    {
+                        Answer: "The Police",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "U2",
+                        Correct: false,
+                    },
+                ],
+            },
+            {
+                Question: "Which Band wrote the song 'Take On Me'?",
+                Answers: [
+                    {
+                        Answer: "Journey",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Billy Joel",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "A-Ha",
+                        Correct: true,
+                    },
+                    {
+                        Answer: "U2",
+                        Correct: false,
+                    },
+                ],
+            },
+            {
+                Question: "Which Band wrote the song 'I Will Follow'?",
+                Answers: [
+                    {
+                        Answer: "Journey",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Def Leppard",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Billy Joel",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "U2",
+                        Correct: true,
+                    },
+                ],
+            },
+            {
+                Question: "Which Band wrote the song 'Uptown Girl'?",
+                Answers: [
+                    {
+                        Answer: "Journey",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Def Leppard",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Billy Joel",
+                        Correct: true,
+                    },
+                    {
+                        Answer: "Hall and Oates",
+                        Correct: false,
+                    },
+                ],
+            },
+            {
+                Question: "Which Band wrote the song 'Feeling That Way'?",
+                Answers: [
+                    {
+                        Answer: "Journey",
+                        Correct: true,
+                    },
+                    {
+                        Answer: "Queen",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "The Police",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Hall and Oates",
+                        Correct: false,
+                    },
+                ],
+            },
+            {
+                Question: "Which Band wrote the song 'Private Eyes'?",
+                Answers: [
+                    {
+                        Answer: "Journey",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Def Leppard",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "The Police",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Hall and Oates",
+                        Correct: true,
+                    },
+                ],
+            },
+            {
+                Question: "Which Band wrote the song 'Another One Bites the Dust'?",
+                Answers: [
+                    {
+                        Answer: "Queen",
+                        Correct: true,
+                    },
+                    {
+                        Answer: "Def Leppard",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "The Police",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "David Bowie",
+                        Correct: false,
+                    },
+                ],
+            },
+            {
+                Question: "Which Band wrote the song 'Photograph'?",
+                Answers: [
+                    {
+                        Answer: "Journey",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Def Leppard",
+                        Correct: true,
+                    },
+                    {
+                        Answer: "David Bowie",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Rolling Stones",
+                        Correct: false,
+                    },
+                ],
+            },
+            {
+                Question: "Which Band wrote the song 'Undercover of the Night'?",
+                Answers: [
+                    {
+                        Answer: "Poison",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Heart",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "David Bowie",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Rolling Stones",
+                        Correct: true,
+                    },
+                ],
+            },
+            {
+                Question: "Which Band wrote the song 'Under Pressure'?",
+                Answers: [
+                    {
+                        Answer: "Poison",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Heart",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "David Bowie",
+                        Correct: true,
+                    },
+                    {
+                        Answer: "Van Halen",
+                        Correct: false,
+                    },
+                ],
+            },    
+        ];
+
+
+
+         //  questions_90s Questions/Answers
+        
+         const questions_90s = [
+            {
+                Question: "Which Band wrote the song 'How Deep is Your Love'?",
+                Answers: [
+                    {
+                        Answer: "The Beatles",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Fleetwood Mac",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Bee Gees",
+                        Correct: true,
+                    },
+                    {
+                        Answer: "Led Zeppelin",
+                        Correct: false,
+                    },
+                ],
+            },
+            {
+                Question: "Which Band wrote the song 'Mr. Blue Sky'?",
+                Answers: [
+                    {
+                        Answer: "The Temptations",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Electric Light Orchestra",
+                        Correct: true,
+                    },
+                    {
+                        Answer: "Bee Gees",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Aerosmith",
+                        Correct: false,
+                    },
+                ],
+            },
+            {
+                Question: "Which Band wrote the song 'Superstition'?",
+                Answers: [
+                    {
+                        Answer: "Parliament",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Electric Light Orchestra",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "The Temptations",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Stevie Wonder",
+                        Correct: true,
+                    },
+                ],
+            },
+            {
+                Question: "Which Band wrote the song 'Just My Imagination'?",
+                Answers: [
+                    {
+                        Answer: "Sly And The Family Stone",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "The Temptations",
+                        Correct: true,
+                    },
+                    {
+                        Answer: "Pink Floyd",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Parliament",
+                        Correct: false,
+                    },
+                ],
+            },
+            {
+                Question: "Which Band wrote the song 'Get Back'?",
+                Answers: [
+                    {
+                        Answer: "Beatles",
+                        Correct: true,
+                    },
+                    {
+                        Answer: "AC/DC",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Pink Floyd",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Led Zeppelin",
+                        Correct: false,
+                    },
+                ],
+            },
+            {
+                Question: "Which Band wrote the song 'When the Levee Breaks'?",
+                Answers: [
+                    {
+                        Answer: "Beatles",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "AC/DC",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Rolling Stones",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Led Zeppelin",
+                        Correct: true,
+                    },
+                ],
+            },
+            {
+                Question: "Which Band wrote the song 'Dream On'?",
+                Answers: [
+                    {
+                        Answer: "Beatles",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Aerosmith",
+                        Correct: true,
+                    },
+                    {
+                        Answer: "Rolling Stones",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Pink Floyd",
+                        Correct: false,
+                    },
+                ],
+            },
+            {
+                Question: "Which Band wrote the song 'Sara Smile'?",
+                Answers: [
+                    {
+                        Answer: "Beatles",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "AC/DC",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Pink Floyd",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Hall and Oates",
+                        Correct: true,
+                    },
+                ],
+            },
+            {
+                Question: "Which Band wrote the song 'Somebody to Love'?",
+                Answers: [
+                    {
+                        Answer: "Sly and the Family Stone",
                         Correct: false,
                     },
                     {
@@ -205,36 +621,41 @@
                         Correct: true,
                     },
                     {
-                        Answer: "Eagles",
+                        Answer: "Hall and Oates",
                         Correct: false,
                     },
                 ],
             },
-        
-        
-            
-
+            {
+                Question: "Which Band wrote the song 'Comfortably Numb'?",
+                Answers: [
+                    {
+                        Answer: "Pink Floyd",
+                        Correct: true,
+                    },
+                    {
+                        Answer: "AC/DC",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Queen",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Eagles",
+                        Correct: false,
+                    },
+                ],
+            }, 
             
         ];
-        // const person = ["Andrew" , "Ghenet", "Thomas"]
 
-        // const person =[ {
-        //     firstName: "John",
-        //     lastName: "Doe",
-        //     age: 50,
-        //     eyeColor: "blue",
-            
-        //   },{
-        //     firstName: "Andrew",
-        //     lastName: "Eacho",
-        //     age: 50,
-        //     eyeColor: "blue",
-            
-        //   }]
-
-        //   person[0].lastName
+        
+        
 
 
+
+            // checkAnswer for 70's Questions
 
         function checkAnswer(isCorrect) {
             if (isCorrect) {
@@ -244,11 +665,8 @@
                 if (currentQuestionIndex < questions_70s.length) {
                     displayQuestion(currentQuestionIndex);
                 }
-                
-
-                //questions_70s[0] question should be questions_70s[i+1]
                
-            } else {
+                } else {
 
                 alert("Incorrect. Try Again");
             
@@ -262,10 +680,13 @@
 
 
 
+
         //have an array of objects for q and a's just from line 2 to 50. 
         //  for displayQUestion function get question set id from the array (line 103)
         // call display question function if correct!!!
         
+
+            // displayQuestion for 70's Questions
 
         function displayQuestion(i) {
             const questionData = questions_70s[i];
