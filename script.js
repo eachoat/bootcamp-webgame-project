@@ -741,8 +741,7 @@
                     
             }
 
-            currentQuestionIndex = 0;
-            displayQuestion(currentQuestions, currentQuestionIndex)
+  
         
             
             document.getElementById('home-screen').style.display = 'none';
