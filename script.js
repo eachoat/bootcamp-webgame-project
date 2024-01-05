@@ -1,6 +1,8 @@
       //  questions_70s Questions/Answers
 
       let currentQuestionIndex = 0;
+      let currentQuestions= []
+
         const questions_70s = [
             {
                 Question: "Which Band wrote the song 'How Deep is Your Love'?",
@@ -214,7 +216,7 @@
             },      
         ];
 
-
+        
 
 
         //  questions_80s Questions/Answers
@@ -438,215 +440,215 @@
         
          const questions_90s = [
             {
-                Question: "Which Band wrote the song 'How Deep is Your Love'?",
+                Question: "Which Band wrote the song 'Black Hole Sun'?",
                 Answers: [
                     {
-                        Answer: "The Beatles",
+                        Answer: "Radiohead",
                         Correct: false,
                     },
                     {
-                        Answer: "Fleetwood Mac",
+                        Answer: "Pearl Jam",
                         Correct: false,
                     },
                     {
-                        Answer: "Bee Gees",
+                        Answer: "Soundgarden",
                         Correct: true,
                     },
                     {
-                        Answer: "Led Zeppelin",
+                        Answer: "Green Day",
                         Correct: false,
                     },
                 ],
             },
             {
-                Question: "Which Band wrote the song 'Mr. Blue Sky'?",
+                Question: "Which Band wrote the song 'Karma Police",
                 Answers: [
                     {
-                        Answer: "The Temptations",
-                        Correct: false,
-                    },
-                    {
-                        Answer: "Electric Light Orchestra",
+                        Answer: "Radiohead",
                         Correct: true,
                     },
                     {
-                        Answer: "Bee Gees",
+                        Answer: "Pearl Jam",
                         Correct: false,
                     },
                     {
-                        Answer: "Aerosmith",
+                        Answer: "Nirvana",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Green Day",
                         Correct: false,
                     },
                 ],
             },
             {
-                Question: "Which Band wrote the song 'Superstition'?",
+                Question: "Which Band wrote the song 'Lithium'?",
                 Answers: [
                     {
-                        Answer: "Parliament",
+                        Answer: "Red Hot Chili Peppers",
                         Correct: false,
                     },
                     {
-                        Answer: "Electric Light Orchestra",
+                        Answer: "Blink-182",
                         Correct: false,
                     },
                     {
-                        Answer: "The Temptations",
-                        Correct: false,
-                    },
-                    {
-                        Answer: "Stevie Wonder",
-                        Correct: true,
-                    },
-                ],
-            },
-            {
-                Question: "Which Band wrote the song 'Just My Imagination'?",
-                Answers: [
-                    {
-                        Answer: "Sly And The Family Stone",
-                        Correct: false,
-                    },
-                    {
-                        Answer: "The Temptations",
+                        Answer: "Nirvana",
                         Correct: true,
                     },
                     {
-                        Answer: "Pink Floyd",
-                        Correct: false,
-                    },
-                    {
-                        Answer: "Parliament",
+                        Answer: "Green Day",
                         Correct: false,
                     },
                 ],
             },
             {
-                Question: "Which Band wrote the song 'Get Back'?",
+                Question: "Which Band wrote the song 'Under the Bridge'?",
                 Answers: [
                     {
-                        Answer: "Beatles",
+                        Answer: "Red Hot Chili Peppers",
                         Correct: true,
                     },
                     {
-                        Answer: "AC/DC",
+                        Answer: "Smash Mouth",
                         Correct: false,
                     },
                     {
-                        Answer: "Pink Floyd",
+                        Answer: "Pearl Jam",
                         Correct: false,
                     },
                     {
-                        Answer: "Led Zeppelin",
+                        Answer: "Green Day",
                         Correct: false,
                     },
                 ],
             },
             {
-                Question: "Which Band wrote the song 'When the Levee Breaks'?",
+                Question: "Which Band wrote the song 'Basket Case'?",
                 Answers: [
                     {
-                        Answer: "Beatles",
+                        Answer: "Beastie Boys",
                         Correct: false,
                     },
                     {
-                        Answer: "AC/DC",
+                        Answer: "Blink-182",
                         Correct: false,
                     },
                     {
-                        Answer: "Rolling Stones",
+                        Answer: "Pearl Jam",
                         Correct: false,
                     },
                     {
-                        Answer: "Led Zeppelin",
+                        Answer: "Green Day",
                         Correct: true,
                     },
                 ],
             },
             {
-                Question: "Which Band wrote the song 'Dream On'?",
+                Question: "Which Band wrote the song 'Just'?",
                 Answers: [
                     {
-                        Answer: "Beatles",
+                        Answer: "Beastie Boys",
                         Correct: false,
                     },
                     {
-                        Answer: "Aerosmith",
-                        Correct: true,
-                    },
-                    {
-                        Answer: "Rolling Stones",
+                        Answer: "Smash Mouth",
                         Correct: false,
                     },
                     {
-                        Answer: "Pink Floyd",
-                        Correct: false,
-                    },
-                ],
-            },
-            {
-                Question: "Which Band wrote the song 'Sara Smile'?",
-                Answers: [
-                    {
-                        Answer: "Beatles",
+                        Answer: "Weezer",
                         Correct: false,
                     },
                     {
-                        Answer: "AC/DC",
-                        Correct: false,
-                    },
-                    {
-                        Answer: "Pink Floyd",
-                        Correct: false,
-                    },
-                    {
-                        Answer: "Hall and Oates",
+                        Answer: "Radiohead",
                         Correct: true,
                     },
                 ],
             },
             {
-                Question: "Which Band wrote the song 'Somebody to Love'?",
+                Question: "Which Band wrote the song 'Intergalactic'?",
                 Answers: [
                     {
-                        Answer: "Sly and the Family Stone",
-                        Correct: false,
-                    },
-                    {
-                        Answer: "AC/DC",
-                        Correct: false,
-                    },
-                    {
-                        Answer: "Queen",
+                        Answer: "Beastie Boys",
                         Correct: true,
                     },
                     {
-                        Answer: "Hall and Oates",
+                        Answer: "Blink-182",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Weezer",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Smashing Pumpkins",
                         Correct: false,
                     },
                 ],
             },
             {
-                Question: "Which Band wrote the song 'Comfortably Numb'?",
+                Question: "Which Band wrote the song 'Buddy Holly'?",
                 Answers: [
                     {
-                        Answer: "Pink Floyd",
+                        Answer: "Metallica",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Smash Mouth",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Weezer",
                         Correct: true,
                     },
                     {
-                        Answer: "AC/DC",
+                        Answer: "Blink-182",
+                        Correct: false,
+                    },
+                ],
+            },
+            {
+                Question: "Which Band wrote the song 'Alive'?",
+                Answers: [
+                    {
+                        Answer: "Metallica",
                         Correct: false,
                     },
                     {
-                        Answer: "Queen",
+                        Answer: "Pearl Jam",
+                        Correct: true,
+                    },
+                    {
+                        Answer: "Smash Mouth",
                         Correct: false,
                     },
                     {
-                        Answer: "Eagles",
+                        Answer: "Blink-182",
                         Correct: false,
                     },
                 ],
             }, 
+            {
+                Question: "Which Band wrote the song 'All Star'?",
+                Answers: [
+                    {
+                        Answer: "Metallica",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Pearl Jam",
+                        Correct: false,
+                    },
+                    {
+                        Answer: "Smash Mouth",
+                        Correct: true,
+                    },
+                    {
+                        Answer: "Blink-182",
+                        Correct: false,
+                    },
+                ],
+            },
             
         ];
 
@@ -662,8 +664,8 @@
                 alert("Correct!");
 
                 currentQuestionIndex++;
-                if (currentQuestionIndex < questions_70s.length) {
-                    displayQuestion(currentQuestionIndex);
+                if (currentQuestionIndex < currentQuestions.length) {
+                    displayQuestion(currentQuestions, currentQuestionIndex);
                 }
                
                 } else {
@@ -688,8 +690,8 @@
 
             // displayQuestion for 70's Questions
 
-        function displayQuestion(i) {
-            const questionData = questions_70s[i];
+        function displayQuestion(currentQuestions, i) {
+            const questionData = currentQuestions[i];
         
             const questionTextElement = document.getElementById("question-text");
             questionTextElement.textContent = questionData.Question;
@@ -724,6 +726,25 @@
         });
 
         function showDecade(decade) {
+            switch (decade) {
+                case '70s':
+                    currentQuestions = questions_70s;
+                    break;
+                case '80s':
+                    currentQuestions = questions_80s;
+                    break;
+                case '90s':
+                    currentQuestions = questions_90s;
+                    break;
+                default:
+                    return;
+                    
+            }
+
+            currentQuestionIndex = 0;
+            displayQuestion(currentQuestions, currentQuestionIndex)
+        
+            
             document.getElementById('home-screen').style.display = 'none';
             const decadeQuestions = document.getElementById('decade-questions');
             const questionSetId = `${decade}-question-set-1`;
