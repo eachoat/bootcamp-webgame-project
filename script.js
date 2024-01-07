@@ -1,4 +1,5 @@
-      //  questions_70s Questions/Answers
+        //  questions_70s Questions/Answers
+
 
       let currentQuestionIndex = 0;
       let currentQuestions= []
@@ -657,7 +658,8 @@
 
 
 
-            // checkAnswer for 70's Questions
+            // checkAnswer function determines if correct answer is given
+            // and lets user know if answer was incorrect or correct
 
         function checkAnswer(isCorrect) {
             if (isCorrect) {
@@ -680,15 +682,11 @@
 
 
 
-
-
-
-        //have an array of objects for q and a's just from line 2 to 50. 
-        //  for displayQUestion function get question set id from the array (line 103)
-        // call display question function if correct!!!
         
 
-            // displayQuestion for 70's Questions
+            // displayQuestion function updates the webpage to show a specific question and the corresponding answers
+            // the event listener handles incorrect and correct answers
+            // function is called if correct answer is given
 
         function displayQuestion(currentQuestions, i) {
             const questionData = currentQuestions[i];
@@ -710,7 +708,7 @@
         }
 
         
-
+            //handles page links and the content of the separate decades
 
         document.addEventListener('DOMContentLoaded', function () {
             const links = document.querySelectorAll('#home-screen ul a');
@@ -724,6 +722,9 @@
                 });
             });
         });
+
+
+            // showDecade function allows currentQuestions to be used for each decade
 
         function showDecade(decade) {
             switch (decade) {
@@ -741,8 +742,9 @@
                     
             }
 
+
   
-        
+            //handles hiding home screen once decade is selected and ensures that the correct decadeQuestions are visible
             
             document.getElementById('home-screen').style.display = 'none';
             const decadeQuestions = document.getElementById('decade-questions');
