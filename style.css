@@ -1,8 +1,3 @@
-.game-q-a{  
-    
-
-}
-
 .menu-header {
     font-size: 26px;
     margin-bottom: 25px;
@@ -18,18 +13,22 @@
     display:flex;
     flex-direction:column;
     align-items: center;
-
-
-
 }
 
 
 #answers-container button {
     margin-bottom: 20px;
-    background-color: #00f2ff;
+    background-color: #00ffee;
     width: 200px;
     height: 50px;
     font-size: 15px;
+    font-weight: bolder;
+    curser: pointer;
+    transition: transform 0.2s ease;
+}
+
+#answers-container button:active {
+    transform: scale(0.95);
 }
 
 
@@ -58,7 +57,28 @@ ul {
 li {
     display: inline-block;
     padding:20px;
+    transition: transform 0.3s ease-in-out;
     
+}
+
+li:hover{
+    animation: wiggle 0.5s ease-in-out;
+
+}
+
+@keyframes wiggle {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+    transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
 }
 
 a {
@@ -73,7 +93,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #55dc61;
+    background-color: #55a8dc;
 }
 
 #game-container {
