@@ -1,0 +1,84 @@
+@import 'variables';
+@import 'mixins';
+
+.menu-header {
+    font-size: $font-size-large;
+    margin-bottom: $margin-small;
+
+}
+
+.menu-header-2 {
+    font-size: $font-size-medium;
+    margin-bottom: $margin-large;
+}
+
+#answers-container {
+    @include flex-center(column);
+
+    button {
+        margin-bottom: $margin-tiny;
+        background-color: $background-color-button;
+        width: 200px;
+        height: 50px;
+        font-size: $font-size-small;
+        font-weight: bolder;
+        cursor: pointer;
+        @include transition(transform, 0.2s);
+
+        &:active {
+          transform: scale(0.95);
+        }
+
+    }
+}
+
+
+#home-screen{
+    text-align: center;
+    height: 60px;
+    overflow: auto;
+    margin-top: $margin-medium;
+}
+
+
+ul {
+    text-align: center;
+    font-size: $font-size-medium;
+    margin-top: $margin-medium;
+}
+
+
+li {
+    display: inline-block;
+    padding: $padding-medium;
+    @include transition(transform, 0.3s ease-in-out);
+  
+    &:hover {
+      animation: wiggle 0.5s ease-in-out;
+    }
+  }
+
+
+@keyframes wiggle {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-5deg);
+    }
+    50% {
+      transform: rotate(5deg);
+    }
+    75% {
+      transform: rotate(-5deg);
+    }
+  }
+
+
+  #game-container {
+    width: 400px;
+    height: 400px; 
+    border: 2px solid $border-color-container; 
+    padding: $padding-medium; 
+    background-color: $background-color-container;
+  }
